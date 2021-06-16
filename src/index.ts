@@ -5,13 +5,18 @@ const PORT = 3000;
 
 app.get('/level', (req: Request, res: Response) => {
    const level = {
+      board_id: "apilevel",
       name: "Level from API",
       rows: [
-         "##########",
-         "#x.x#....#",
-         "#...CC.P.#",
-         "#........#",
-         "##########",
+         "..#####.",
+         "###...#.",
+         "#xPC..#.",
+         "###.Cx#.",
+         "#x##C.#.",
+         "#.#.x.##",
+         "#C.CCCx#",
+         "#...x..#",
+         "########",
       ],
    };
    res.json(level);
